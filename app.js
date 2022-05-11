@@ -19,7 +19,7 @@ app.use((req, res, next)=>{
 
 async function run() {
     try {
-            await mongoose.connect('mongodb://localhost:27017/MEANApp');
+            await mongoose.connect('mongodb://localhost:27017/KANBAN');
         } catch (error) {
               handleError(error);
             }
