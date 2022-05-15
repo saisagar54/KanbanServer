@@ -1,8 +1,9 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const Task = require('./models/task');
+const mongoose = require('mongoose');
 
-app.use(bodyParser.json());
+
 
 const app = express();
 mongoose.connect('mongodb://localhost:27017/KANBAN').
