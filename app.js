@@ -82,7 +82,7 @@ app.put('/api/tasks/:id', (req, res, next)=>{
         due_date:req.body.due_date,
         status:req.body.status
     });
-    Task.updateOne({_id: req.params.id}, post).then(result =>{
+    Task.updateOne({_id: req.params.id}, task).then(result =>{
         console.log(result);
         res.status(200).json({message: "updated successfully"});
     });
